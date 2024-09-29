@@ -104,8 +104,8 @@ function handleClick(filter = {}) {
           // if cookieStoreId is not provided, do not filter
           (filter.cookieStoreId == undefined) ||
           // if cookieStoreId is provided, only provide that store
-          (store.id == filter.cookieStoreId)), 
-        filter: filter
+          (store.id == filter.cookieStoreId)),
+        filter: {url: filter.url}
     })
   );
 }
